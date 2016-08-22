@@ -1,5 +1,6 @@
-QUICK AND DIRTY
-===============
+# UNIX Network programming Source code
+
+# QUICK AND DIRTY
 
 Execute the following from the src/ directory:
 
@@ -14,7 +15,7 @@ Execute the following from the src/ directory:
     cd ../libroute # only if your system supports 4.4BSD style routing sockets
     make           # only if your system supports 4.4BSD style routing sockets
 
-    cd ../libxti   # only if your system supports XTI
+    cd ../libxti   # only if your system supports XTI, 第三版已经不存在该文件
     make           # only if your system supports XTI
 
     cd ../intro    # build and test a basic client program
@@ -25,8 +26,9 @@ If all that works, you're all set to start compiling individual programs.
 
 Notice that all the source code assumes tabs every 4 columns, not 8.
 
-MORE DETAILS
-============
+NOTE: libfree 的编译出现错误，参考处理: http://www.cnblogs.com/52php/p/5684487.html 。Intro 出的代码，不能再 IPv6 上运行。
+
+## MORE DETAILS
 
 5.  If you need to make any changes to the "unp.h" header, notice that it
     is a hard link in each directory, so you only need to change it once.
@@ -55,8 +57,7 @@ MORE DETAILS
     "test" in the filename: they are probably a quick test program that I
     wrote to check something, and may or may not work.
 
-NOTES
------
+## NOTES
 
 - Many systems do not have correct function prototypes for the socket
   functions, and this can cause many warnings during compilation.

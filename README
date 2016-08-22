@@ -25,6 +25,8 @@ If all that works, you're all set to start compiling individual programs.
 
 Notice that all the source code assumes tabs every 4 columns, not 8.
 
+Note: You can compile lib by use start.sh, that includes prepare working commandline.
+
 MORE DETAILS
 ============
 
