@@ -5,7 +5,7 @@ int
 main(int argc, char **argv)
 {
 	int					listenfd, connfd;
-	socklen_t			len;
+	socklen_t			len;  // This data struct adjust for os 64. 
 	struct sockaddr_in	servaddr, cliaddr;
 	char				buff[MAXLINE];
 	time_t				ticks;
